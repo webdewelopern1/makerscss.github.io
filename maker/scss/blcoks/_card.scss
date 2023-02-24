@@ -1,0 +1,59 @@
+.cards {
+  padding: 120px 0;
+}
+
+.card-text {
+  text-align: center;
+}
+.text__title {
+  @include textStyle(700, 38px, 45px, #252626);
+}
+.text__text {
+  @include textStyle(400, 16px, 160%, #707273);
+  max-width: 597px;
+  margin: 0 auto;
+}
+.wrapper {
+  @include flexBox(flex, space-between, center);
+  padding: 90px 0;
+  flex-wrap: wrap;
+}
+.cardes {
+  text-align: center;
+  width: 261px;
+  height: 262px;
+  margin: 0 auto;
+  
+  &:hover{
+    background: #d1f4f9;
+    border: 1px solid #a3e0e8;
+    border-radius: 10px;
+    background-image: url(/img/Patten.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.card {
+  padding: 30px 0;
+}
+
+.card__title {
+  @include textStyle(600, 21px, 150%, #252626);
+}
+.card__text {
+  @include textStyle(400, 16px, 160%, #707273);
+  margin: 0 auto;
+  max-width: 217px;
+  margin-top: 10px;
+}
+
+@media (max-width:370px) {
+  .text__title{
+    font-size: 30px;
+  }
+
+  .text__text{
+    font-size: 12px;
+  }
+}

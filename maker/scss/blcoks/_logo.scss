@@ -1,0 +1,46 @@
+.logos {
+  background-image: url(/img/fon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.logo__text {
+  @include textStyle(500, 32px, 140%, #4B4C4C);
+  max-width: 1072px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.logos__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__title{
+  @include textStyle(500, 21px, 80%, #4B4C4C);
+  margin-left: 15px;
+}
+
+.logo__texs{
+  @include textStyle(500, 12px, 100%, #707273);
+  margin-top: 10px;
+}
+
+@media (max-width:725px) {
+  .logo__text{
+    font-size: 20px;
+  }
+}
+
+@media (max-width:495px) {
+  .logo__text{
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,45 @@
+.watchs {
+   background-image: url(/img/orqa\ fon.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: 152px;
+}
+
+.watch {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.watch__title {
+  @include textStyle(700, 38px, 120%, #fff);
+}
+
+.watch__text {
+  @include textStyle(400, 16px, 160%, #fff);
+  max-width: 785px;
+  margin: 0 auto;
+}
+
+.watch img{
+  margin-top: 35px;
+}
+
+@media (max-width:420px) {
+  .watch__title{
+    font-size: 30px;
+  }
+
+  .watch__text{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:340px) {
+  .watch__title{
+    font-size: 22px;
+  }
+
+  .watch__text{
+    font-size: 10px;
+  }
+}

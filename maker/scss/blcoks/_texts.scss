@@ -1,0 +1,64 @@
+.texd {
+  @include flexBox(flex, space-between, center);
+}
+
+.texts__title {
+  @include textStyle(700, 38px, 45px, #252626);
+}
+
+.texts__text {
+  @include textStyle(500, 16px, 160%, #707273);
+}
+
+.textd__text {
+  @include textStyle(400, 16px, 160%, #707273);  
+  max-width: 449px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.texts__btn {
+  @include allBtn(15px 30px, #fff, 1px solid #35AFBF, 6px);
+  @include textStyle(500, 16px, 120%, #35AFBF);
+  transition: all 0.4s ease;
+
+  &:hover{
+    background-color: #35AFBF;
+    color: #fff;
+  }
+}
+
+.texts-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:800px) {
+  .textd__text{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:600px) {
+  .texd{
+    flex-direction: column;
+  }
+
+  .text{
+    text-align: center;
+  }
+
+  .texts-img{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:310px) {
+  .texts__title{
+    font-size: 30px;
+  }
+
+  .textd__text{
+    font-size: 10px;
+  }
+}

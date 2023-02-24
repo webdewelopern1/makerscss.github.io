@@ -1,0 +1,23 @@
+.oxirgi-ish {
+  padding: 120px 0;
+}
+
+.oxirgi {
+  text-align: center;
+}
+.oxirgi__title {
+  @include textStyle(700, 38px, 135%, #252626);
+  max-width: 854px;
+  margin: 0 auto;
+}
+.oxirgi__btn {
+  @include allBtn(15px 35px, #fff, 1px solid #35AFBF, 6px);
+  @include textStyle(500, 16px, 120%, #35AFBF);
+  margin-top: 35px; 
+  transition: all 0.4s ease;
+
+  &:hover{
+    background-color: #35AFBF;
+    color: #fff;
+  }
+}
